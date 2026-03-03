@@ -2,10 +2,11 @@
 Frida script to bypass any login screen for mod menu for pubg and cod mobile that use bahtia or kuro system.
 
 # Attach to running process
-frida -U -n "your.package.name" -l bypass.js
+    frida -U -n "your.package.name" -l bypass.js
 
 # Or spawn it fresh
-frida -U -f "your.package.name" -l bypass.js --no-pause
+    frida -U -f "your.package.name" -l bypass.js --no-pause
+
 
 | Method | Target                       | From Your Code                                   |
 | ------ | ---------------------------- | ------------------------------------------------ |
