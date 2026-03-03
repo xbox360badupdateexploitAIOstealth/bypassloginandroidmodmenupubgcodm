@@ -357,13 +357,13 @@ function hookTimeFunction(base) {
 }
 
 // ============================================================
-// METHOD 8: DSRANTICRACK bypass - prevent black screen kill
+// METHOD 8: black bypass - prevent black screen kill
 // Patches the AddRectFilled that blacks the screen
 // ============================================================
 function bypassAntiCrack(base) {
     try {
-        // DSRANTICRACK draws a black screen rect using ImGui
-        // Scan for the DSRANTICRACK bool and force it false
+        // ANTICRACK draws a black screen rect using ImGui
+        // Scan for the antICRACK bool and force it false
         // Also hook the condition that triggers it
         let mod = Process.findModuleByName(LIB_NAME);
         if (!mod) return;
@@ -386,7 +386,7 @@ function bypassAntiCrack(base) {
                             if (color === 0xFF000000 || color === -16777216) {
                                 // Skip this draw call - return early
                                 this.skipCall = true;
-                                success("METHOD 8: DSRANTICRACK black rect blocked");
+                                success("METHOD 8:  black rect blocked");
                             }
                         } catch(e) {}
                     }
