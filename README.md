@@ -1,6 +1,8 @@
 # bypassloginandroidmodmenupubgcodm
 Frida script to bypass any login screen for mod menu for pubg and cod mobile that use bahtia or kuro system.
 
+does android mod menu for pubg ask for login key? this will bypass kuro login system 
+
 # Attach to running process
     frida -U -n "your.package.name" -l bypass.js
 
